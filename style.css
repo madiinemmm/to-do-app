@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+.container{
+width: 100%;
+min-height: 100vh;
+background: linear-gradient( 160deg, #610d61, #bc76c9, #5c2969, #8f5594, #4d134d, #58075d, #471352);
+padding: 10px;
+}
+.txt{
+   color: #e7dede;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+    font-size: 30px;
+}
+.todo-app{
+    width: 100%;
+    max-width: 700px;
+    background: linear-gradient( 135deg, #320346, #6b1165, #a328b3, #880774, #37052f);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 20px;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+.add-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(130deg, #dbcad8, #e699d9, #d08ded);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 15px;
+    color: #4c215c;
+    font-size: 20px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: linear-gradient(130deg, #3b174f, #722683, #7c3180, #4d0365, #500154);
+    color: #ecebeb;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+ul li {
+    list-style: none;
+    font-size: 20px;
+    padding: 12px 8px 12px 50px;
+    color: #fcdff7;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    font-size: 22px;
+    transition: all 0.7s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image: url(./images/unchecked-17-16.png);
+    background-size: cover;
+    background-position: center;
+    left: 5px;
+}
+ul li.checked{
+    text-decoration: line-through;
+    color: #3f0439;
+}
+ul li.checked::before{
+    background-image: url(./svg/check-mark-svgrepo-com.svg);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 0px;
+    font-size: 40px;
+    color: #fcdff7;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+ background: #c344b2;
+}
