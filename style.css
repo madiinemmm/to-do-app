@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
+body{
     font-family: sans-serif;
 }
 .container{
@@ -32,6 +32,12 @@ padding: 10px;
     width: 30px;
     height: 30px;
     border-radius: 20px;
+}
+.error-txt{
+    color: rgb(255, 0, 0); 
+    margin-left: 10px;
+    display: none;
+    font-size: 13px;
 }
 .add-button{
     display: flex;
