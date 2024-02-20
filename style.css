@@ -1,4 +1,37 @@
-*{
+
+#gradient
+{
+    min-height: 100vh;
+    width:100%;
+    border:1px solid rgb(217, 0, 255);
+    font-size:30px; 
+    background: rgb(130, 2, 173);
+    background: linear-gradient(90deg, rgb(56, 0, 63) 8%, rgb(100, 2, 113) 35%, rgb(103, 3, 106) 85%, rgb(92, 13, 109) 100%);
+    background-size: 200% 200%; 
+
+    -webkit-animation: Animation 10s ease infinite;
+    -moz-animation: Animation 10s ease infinite;
+    animation: Animation 10s ease infinite;
+}
+
+@-webkit-keyframes Animation {
+    0%{background-position:1.0}
+    50%{background-position:91% 100%}
+    100%{background-position:0.0}
+}
+@-moz-keyframes Animation {
+    0%{background-position:1.0}
+    50%{background-position:91% 100%}
+    100%{background-position:0.0}
+}
+@keyframes Animation { 
+    0%{background-position:1.0}
+    50%{background-position:91% 100%}
+    100%{background-position:0.0}
+} 
+ 
+ 
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +42,7 @@ body{
 .container{
 width: 100%;
 min-height: 100vh;
-background: linear-gradient( 160deg, #610d61, #bc76c9, #5c2969, #8f5594, #4d134d, #58075d, #471352);
+
 padding: 10px;
 }
 .txt{
@@ -23,7 +56,7 @@ padding: 10px;
 .todo-app{
     width: 100%;
     max-width: 700px;
-    background: linear-gradient( 135deg, #320346, #6b1165, #a328b3, #880774, #37052f);
+    background: linear-gradient( 135deg, #230232, #60045a, #71077e, #530046, #2e0537);
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 20px;

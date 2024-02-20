@@ -63,7 +63,7 @@ inputBox && inputBox.addEventListener('keyup', function (event) {
 
 btn.addEventListener("click", function () {
     if (validate()){
-
+          
     }
 }, false);
 
